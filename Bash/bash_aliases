@@ -1,0 +1,4 @@
+alias nautilus="nautilus --no-desktop"
+alias biglog="ls -Sshor /var/log"
+alias comp_syslog="sudo gzip --best /var/log/syslog.1"
+alias biglogrotate="sudo logrotate /etc/logrotate.d/rsyslog"
