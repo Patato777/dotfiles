@@ -118,6 +118,10 @@ fi
 
 source <(kitty + complete setup bash)
 
+function shortPWD {
+	echo "$PWD" | perl -pe 's-/home/administrateur-~-g' | perl -pe 's-(?<=[^/~]/)[^/]*(?=/[^/])-…-g'
+}
+
 function myPrompt {
 #Let's define colors
 local RED="\[\033[31m\]"
@@ -137,7 +141,7 @@ local RESETCOL="\[\033[0m\]"
 
 #And here is the prompt!
 PS1="\[\033(0\]lq\[\033(B\]\
-$REDBG$PINK░▒▓█$RESETCOL$PINKBG\u: \w \
+$REDBG$PINK░▒▓█$RESETCOL$PINKBG\u: \$(shortPWD)\
 $PINK$CYANBG$RESETCOL$CYANBG \A $RESETCOL$CYAN\n$RESETCOL\
 \[\033(0\]mq\[\033(B\] "
 }
