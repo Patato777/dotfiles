@@ -119,7 +119,7 @@ fi
 source <(kitty + complete setup bash)
 
 function shortPWD {
-	echo "$PWD" | perl -pe 's-/home/administrateur-~-g' | perl -pe 's-(?<=[^/~]/)[^/]*(?=/[^/])-…-g'
+	echo "$PWD" | perl -pe "s-$HOME-~-g" | perl -pe 's-(?<=[^/~]/)[^/]*(?=/[^/])-…-g'
 }
 
 function myPrompt {
