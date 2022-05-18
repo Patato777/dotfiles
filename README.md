@@ -1,4 +1,6 @@
 # dotfiles
+For now the install script isn't yet created  
+
 Patato's dotfiles, use them as you want\
 Everything under MIT license but the images (see with their creators)\
 Credits for the different backgrounds to Valenberg (https://twitter.com/MrValenberg, http://valenberg.com/). Get them on the VirtuaVerse Discord: https://discord.gg/virtuaverse
