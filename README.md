@@ -1,5 +1,5 @@
 # dotfiles
-The script is there but it needs to manually do "sudo update-grub"
+The script is there but you needs to manually do "sudo update-grub" after running the script
 
 Patato's dotfiles, use them as you want\
 Everything under MIT license but the images (see with their creators)\
