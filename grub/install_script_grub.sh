@@ -1,5 +1,11 @@
 #!/bin/bash
 
+if [ "$EUID" -ne 0 ]
+  then echo "Please run as root"
+  exit
+fi
+
+
 echo Copying the theme in the right folder
 cp -r ./themes /boot/grub
 echo If there are no error the themes was copied succefully :D
