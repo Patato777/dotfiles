@@ -1,5 +1,5 @@
 # dotfiles
-For now the install script isn't yet created  
+The script is there but it needs to manually do "sudo update-grub"
 
 Patato's dotfiles, use them as you want\
 Everything under MIT license but the images (see with their creators)\
