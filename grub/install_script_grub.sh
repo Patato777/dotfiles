@@ -42,22 +42,6 @@ check_grub_ver() {
   printf "[MSG]\tUsing grub directory: $GRUB_DIR\n"
 }
 
-check_grub_ver() {
-  if [ -x "$(command -v grub2-mkconfig)" ] && [ -d "/boot/grub2" ]; then
-    GRUB_DIR="/boot/grub2"
-    printf "${CYAN}[MSG]\tGrub2 detected. Using directory: $GRUB_DIR\n"
-  elif [ -x "$(command -v grub-mkconfig)" ] && [ -d "/boot/grub" ]; then
-    GRUB_DIR="/boot/grub"
-    printf "${CYAN}[MSG]\tGrub detected. Using directory: $GRUB_DIR\n"
-  else
-    printf "${RED}[ERR]\tNo grub directory found! wtf?\n"
-    printf "${RED}[ERR]\tExiting...\n"
-    exit 1
-  fi
-
-  printf "[MSG]\tUsing grub directory: $GRUB_DIR\n"
-}
-
 #################################################
 # only run in case no themes directory found
 # some distros have themes directory by default
